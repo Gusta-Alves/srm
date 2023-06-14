@@ -1,7 +1,7 @@
 <section class="c-container c-emprestimo">
     <h1 class="c-emprestimo__title">Formulário de solicitação de empréstimo</h1>
 
-    <form class="c-form" [formGroup]="formGroup">
+    <form class="c-form" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
         <div class="c-form__inputs">
             <mat-form-field appearance="outline">
                 <mat-label>Nome do solicitante</mat-label>
@@ -20,7 +20,7 @@
                 </mat-form-field>
         </div>
           <div class="c-form__button-container">
-                <button mat-raised-button color="primary" class="c-form__button">Simular empréstimo</button>
+                <button mat-raised-button type="submit" color="primary" class="c-form__button">Simular empréstimo</button>
           </div>
     </form>
       
