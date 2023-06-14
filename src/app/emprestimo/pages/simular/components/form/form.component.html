@@ -7,8 +7,8 @@
           </mat-form-field>
           <mat-form-field appearance="outline">
               <mat-label>Valor desejado</mat-label>
-              <span matPrefix>R$ &nbsp;</span>
-              <input matInput placeholder="Ex. R$ 2.000,00" formControlName="valor" required thousandSeparator="." decimalMarker="," mask="separator.2">
+              <!-- <span matPrefix>R$ &nbsp;</span> -->
+              <input matInput placeholder="Ex. 2.000,00" formControlName="valor" required prefix="R$" thousandSeparator="." decimalMarker="," mask="separator.2">
               <mat-error *ngIf="formGroup.get('valor').getError('required')">Valor inválido</mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">

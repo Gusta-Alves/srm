@@ -1,5 +1,12 @@
-<p>O empréstimo foi realizado com sucesso! Veja abaixo o que você contratou:</p>
+<section class="c-concluir">
+    <div class="c-concluir__img-container">
+        <img class="c-concluir__img" src="./assets/icons/check.png" alt="">
+    </div>
+    <h1 class="c-concluir__title">O empréstimo foi realizado com sucesso! Veja abaixo o que você contratou:</h1>
 
-<h4><strong>Valor das parcelas:</strong> {{emprestimoResponse?.valor | currency: 'BRL':'symbol':'1.2-2'}}</h4>
-<h4><strong>Número de parcelas:</strong> {{emprestimoResponse?.parcelas}}</h4>
-<h4><strong>Total do valor com juros:</strong> {{emprestimoResponse?.total | currency: 'BRL':'symbol':'1.2-2'}}</h4>
+    <app-valor [data]="emprestimoResponse" [align]="true"></app-valor>
+    
+    <div class="c-concluir__button-container">
+        <button (click)="onChangeRoute()" mat-stroked-button color="primary">Simular outro emprestimo</button>
+    </div>
+</section>

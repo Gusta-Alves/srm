@@ -1,0 +1,21 @@
+.c-concluir{
+    &__img-container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    &__img{
+        width: 100px;
+        height: auto;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__data{
+        text-align: center;
+    }
+    &__button-container{
+        display: flex;
+        justify-content: center;
+    }
+}

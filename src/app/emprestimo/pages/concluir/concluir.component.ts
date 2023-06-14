@@ -7,7 +7,7 @@ import { IEmprestimoResponse } from 'src/app/core/models/IEmprestimoResponse';
   templateUrl: './concluir.component.html',
   styleUrls: ['./concluir.component.scss']
 })
-export class ConcluirComponent implements OnInit {
+export class ConcluirComponent {
 
   public emprestimoResponse: IEmprestimoResponse | undefined = undefined
 
@@ -16,7 +16,8 @@ export class ConcluirComponent implements OnInit {
     if(!this.emprestimoResponse) this.router.navigate(['/simular'])
   }
 
-  ngOnInit(): void {
+  onChangeRoute(){
+    this.router.navigate(['/simular'])
   }
 
 }

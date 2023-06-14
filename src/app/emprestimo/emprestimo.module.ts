@@ -1,8 +1,10 @@
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule, registerLocaleData } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import ptBr from '@angular/common/locales/pt';
 registerLocaleData(ptBr);
+import { NgxMaskModule } from 'ngx-mask'
 
 import { EmprestimoRoutingModule } from './emprestimo-routing.module';
 import { EmprestimoComponent } from './emprestimo.component';
@@ -17,8 +19,8 @@ import { ConfirmarComponent } from './pages/simular/dialogs/confirmar/confirmar.
 import { FormComponent } from './pages/simular/components/form/form.component';
 import { SimularComponent } from './pages/simular/simular.component';
 import { ConcluirComponent } from './pages/concluir/concluir.component';
-import { RouterModule } from '@angular/router';
-import { NgxMaskModule } from 'ngx-mask'
+import { MatDividerModule } from '@angular/material/divider';
+import { ValorComponent } from './components/valor/valor.component'; 
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { NgxMaskModule } from 'ngx-mask'
     ConfirmarComponent, 
     FormComponent, 
     SimularComponent, 
-    ConcluirComponent
+    ConcluirComponent, ValorComponent
   ],
   imports: [
     CommonModule,
@@ -37,6 +39,7 @@ import { NgxMaskModule } from 'ngx-mask'
     MatInputModule,
     MatButtonModule,
     MatCardModule,
+    MatDividerModule,
     MatDialogModule,
     RouterModule,
     NgxMaskModule.forRoot(),

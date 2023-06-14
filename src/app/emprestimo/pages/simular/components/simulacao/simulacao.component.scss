@@ -1,3 +1,18 @@
-.c-card{
-    margin-top: 20px;
+@import '../../../../../styles/common.scss';
+
+.c-simulacao{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .c-card{
+        margin-top: 40px;
+        width: 400px;
+        @media #{$mobile}{
+            width: 100%;
+        }
+        &__button-container{
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
