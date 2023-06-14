@@ -3,5 +3,21 @@
 .c-emprestimo{
     &__title{
         text-align: center;
+        margin-bottom: 30px;
+    }
+    .c-form{
+        &__inputs{
+            display: grid;
+            grid-template-columns: 5fr 3fr 3fr;
+            grid-column-gap: 10px;
+            margin-bottom: 20px;
+            @media #{$mobile}{
+                grid-template-columns: 1fr;
+            }
+        }
+        &__button-container{
+            display: flex;
+            justify-content: center;
+        }
     }
 }
