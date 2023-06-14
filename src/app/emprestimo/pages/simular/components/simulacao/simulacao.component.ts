@@ -23,7 +23,7 @@ export class SimulacaoComponent {
       });
 
     dialogRef.afterClosed().subscribe(result => {
-      result && this.router.navigate(['/concluir'])
+      result && this.router.navigateByUrl('/concluir', {state: { simulation: this.emprestimoResponse }});
     });
   }
 }
