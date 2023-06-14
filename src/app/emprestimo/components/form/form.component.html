@@ -1,0 +1,22 @@
+<form class="c-form" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="c-form__inputs">
+        <mat-form-field appearance="outline">
+            <mat-label>Nome do solicitante</mat-label>
+            <input matInput placeholder="João da Silva" formControlName="nome" required>
+            <mat-error *ngIf="formGroup.get('nome').getError('required')">Nome inválido</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+              <mat-label>Valor desejado</mat-label>
+              <input matInput placeholder="R$0000.00" formControlName="valor" required>
+              <mat-error *ngIf="formGroup.get('valor').getError('required')">Valor inválido</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Numero de parcelas</mat-label>
+              <input type="number" matInput placeholder="36x" formControlName="parcelas" required>
+              <mat-error *ngIf="formGroup.get('parcelas').getError('required')">Parcelas inválidas</mat-error>
+            </mat-form-field>
+    </div>
+      <div class="c-form__button-container">
+            <button mat-raised-button type="submit" color="primary" class="c-form__button">Simular empréstimo</button>
+      </div>
+</form>

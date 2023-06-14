@@ -12,9 +12,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ConfirmarComponent } from './dialogs/confirmar/confirmar.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
-  declarations: [EmprestimoComponent, SimulacaoComponent, ConfirmarComponent],
+  declarations: [EmprestimoComponent, SimulacaoComponent, ConfirmarComponent, FormComponent],
   imports: [
     CommonModule,
     EmprestimoRoutingModule,
