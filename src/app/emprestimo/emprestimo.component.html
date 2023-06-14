@@ -1,8 +1,3 @@
 <section class="c-container c-emprestimo">
-    <h1 class="c-emprestimo__title">Formulário de solicitação de empréstimo</h1>
-
-    <app-form (onSubmit$)="onSubmit($event)"></app-form>
-
-    <app-simulacao *ngIf="emprestimoResponse" [emprestimoResponse]="emprestimoResponse"></app-simulacao>
-      
+  <router-outlet></router-outlet>
 </section>

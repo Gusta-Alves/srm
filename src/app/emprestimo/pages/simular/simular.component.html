@@ -1,0 +1,5 @@
+<h1 class="c-simular__title">Formulário de solicitação de empréstimo</h1>
+
+<app-form (onSubmit$)="onSubmit($event)"></app-form>
+
+<app-simulacao *ngIf="emprestimoResponse" [emprestimoResponse]="emprestimoResponse"></app-simulacao>
