@@ -1,3 +1,9 @@
-<h4>Valor das parcelas: {{emprestimoResponse.valor}}</h4>
-<h4>Número de parcelas: {{emprestimoResponse.parcelas}}</h4>
-<h4>Total do valor com juros: {{emprestimoResponse.total}}</h4>
+<mat-card class="c-card">
+    <mat-card-content>
+        <h2>Resultado da simulação</h2>
+        <h4><strong>Valor das parcelas:</strong> {{emprestimoResponse.valor}}</h4>
+        <h4><strong>Número de parcelas:</strong> {{emprestimoResponse.parcelas}}</h4>
+        <h4><strong>Total do valor com juros:</strong> {{emprestimoResponse.total}}</h4>
+        <button mat-raised-button color="accent" (click)="openDialog()">Confirmar</button>
+    </mat-card-content>
+</mat-card>

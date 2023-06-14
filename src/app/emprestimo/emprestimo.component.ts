@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IEmprestimoRequest } from '../core/models/IEmprestimoRequest';
 import { EmprestimoService } from './services/emprestimo.service';
-import { log } from 'console';
 import { IEmprestimoResponse } from '../core/models/IEmprestimoResponse';
 
 @Component({
@@ -13,7 +12,11 @@ import { IEmprestimoResponse } from '../core/models/IEmprestimoResponse';
 export class EmprestimoComponent implements OnInit {
 
   formGroup: FormGroup = {} as FormGroup;
-  emprestimoResponse: IEmprestimoResponse | null = null
+  emprestimoResponse: IEmprestimoResponse | null = {
+    valor: 105,
+    total: "1050.00",
+    parcelas: 12
+  }
 
   constructor(private formBuilder: FormBuilder,
               private emprestimoService: EmprestimoService) { }
