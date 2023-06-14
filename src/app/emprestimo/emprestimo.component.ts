@@ -1,8 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { IEmprestimoRequest } from '../core/models/IEmprestimoRequest';
-import { EmprestimoService } from './pages/simular/services/emprestimo.service';
-import { IEmprestimoResponse } from '../core/models/IEmprestimoResponse';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-emprestimo',

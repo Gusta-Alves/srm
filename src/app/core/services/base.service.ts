@@ -9,8 +9,6 @@ import { IEmprestimoResponse } from '../models/IEmprestimoResponse';
 })
 export abstract class BaseService {
 
-  constructor() { }
-
   protected postData<T>(body: any, headers?: { headers: HttpHeaders }): Observable<T> {
     const response: T = this.backendFunctions(body)
 

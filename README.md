@@ -1,27 +1,34 @@
-# TesteSrm
+# Simulação de empréstimo - SRM
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
+## Sobre o Projeto
 
-## Development server
+Este projeto é uma aplicação web desenvolvida utilizando Angular 9, projetado para fornecer uma solução eficiente e escalável para simular e gerar empréstimos. Através desta plataforma, os usuários podem calcular os parâmetros de empréstimos, visualizar os detalhes de pagamento e gerar acordos de empréstimo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js (v12.0.0 ou superior)
+- npm (v6.0.0 ou superior)
+- Angular CLI (v9.1.15)
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. Clone este repositório para o seu ambiente local usando `git clone`.
 
-## Running unit tests
+2. Instale as dependências com o npm usando `npm install`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Inicie o servidor de desenvolvimento com `ng serve`.
 
-## Running end-to-end tests
+4. Navegue até `http://localhost:4200/`. A aplicação vai recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Deploy
 
-## Further help
+Para fazer o build do projeto, use `ng build`. Os artefatos de build serão armazenados no diretório `dist/`. Use a flag `--prod` para um build de produção.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Contato
+
+Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato.
+
+[Informações de contato]
+
+Espero que você encontre este projeto útil e inspirador!
