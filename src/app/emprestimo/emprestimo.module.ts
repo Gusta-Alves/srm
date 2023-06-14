@@ -1,6 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import ptBr from '@angular/common/locales/pt';
+registerLocaleData(ptBr);
 
 import { EmprestimoRoutingModule } from './emprestimo-routing.module';
 import { EmprestimoComponent } from './emprestimo.component';
@@ -16,9 +18,17 @@ import { FormComponent } from './pages/simular/components/form/form.component';
 import { SimularComponent } from './pages/simular/simular.component';
 import { ConcluirComponent } from './pages/concluir/concluir.component';
 import { RouterModule } from '@angular/router';
+import { NgxMaskModule } from 'ngx-mask'
 
 @NgModule({
-  declarations: [EmprestimoComponent, SimulacaoComponent, ConfirmarComponent, FormComponent, SimularComponent, ConcluirComponent],
+  declarations: [
+    EmprestimoComponent, 
+    SimulacaoComponent, 
+    ConfirmarComponent, 
+    FormComponent, 
+    SimularComponent, 
+    ConcluirComponent
+  ],
   imports: [
     CommonModule,
     EmprestimoRoutingModule,
@@ -28,7 +38,9 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
-    RouterModule
-  ]
+    RouterModule,
+    NgxMaskModule.forRoot(),
+  ],
+  providers: [{ provide: LOCALE_ID, useValue: 'pt-BR' }]
 })
 export class EmprestimoModule { }

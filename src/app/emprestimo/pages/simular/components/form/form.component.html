@@ -2,17 +2,18 @@
     <div class="c-form__inputs">
         <mat-form-field appearance="outline">
             <mat-label>Nome do solicitante</mat-label>
-            <input matInput placeholder="João da Silva" formControlName="nome" required>
+            <input matInput placeholder="Ex. João da Silva" formControlName="nome" required>
             <mat-error *ngIf="formGroup.get('nome').getError('required')">Nome inválido</mat-error>
           </mat-form-field>
           <mat-form-field appearance="outline">
               <mat-label>Valor desejado</mat-label>
-              <input matInput placeholder="R$0000.00" formControlName="valor" required>
+              <span matPrefix>R$ &nbsp;</span>
+              <input matInput placeholder="Ex. R$ 2.000,00" formControlName="valor" required thousandSeparator="." decimalMarker="," mask="separator.2">
               <mat-error *ngIf="formGroup.get('valor').getError('required')">Valor inválido</mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">
               <mat-label>Numero de parcelas</mat-label>
-              <input type="number" matInput placeholder="36x" formControlName="parcelas" required>
+              <input matInput placeholder="Ex. 36" formControlName="parcelas" required mask="999">
               <mat-error *ngIf="formGroup.get('parcelas').getError('required')">Parcelas inválidas</mat-error>
             </mat-form-field>
     </div>

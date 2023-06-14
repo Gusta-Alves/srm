@@ -1,5 +1,5 @@
 <p>O empréstimo foi realizado com sucesso! Veja abaixo o que você contratou:</p>
 
-<h4><strong>Valor das parcelas:</strong> {{emprestimoResponse?.valor | currency: 'BRL'}}</h4>
+<h4><strong>Valor das parcelas:</strong> {{emprestimoResponse?.valor | currency: 'BRL':'symbol':'1.2-2'}}</h4>
 <h4><strong>Número de parcelas:</strong> {{emprestimoResponse?.parcelas}}</h4>
-<h4><strong>Total do valor com juros:</strong> {{emprestimoResponse?.total | currency: 'BRL'}}</h4>
+<h4><strong>Total do valor com juros:</strong> {{emprestimoResponse?.total | currency: 'BRL':'symbol':'1.2-2'}}</h4>
