@@ -29,6 +29,4 @@ Para fazer o build do projeto, use `ng build`. Os artefatos de build serão arma
 
 Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato.
 
-[Informações de contato]
-
-Espero que você encontre este projeto útil e inspirador!
+`gustavoalves1010@gmail.com`
