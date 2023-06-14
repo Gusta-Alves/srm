@@ -14,9 +14,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ConfirmarComponent } from './pages/simular/dialogs/confirmar/confirmar.component';
 import { FormComponent } from './pages/simular/components/form/form.component';
 import { SimularComponent } from './pages/simular/simular.component';
+import { ConcluirComponent } from './pages/concluir/concluir.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [EmprestimoComponent, SimulacaoComponent, ConfirmarComponent, FormComponent, SimularComponent],
+  declarations: [EmprestimoComponent, SimulacaoComponent, ConfirmarComponent, FormComponent, SimularComponent, ConcluirComponent],
   imports: [
     CommonModule,
     EmprestimoRoutingModule,
@@ -25,7 +27,8 @@ import { SimularComponent } from './pages/simular/simular.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    RouterModule
   ]
 })
 export class EmprestimoModule { }
