@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IEmprestimoRequest } from '../core/models/IEmprestimoRequest';
 import { EmprestimoService } from './services/emprestimo.service';
 import { log } from 'console';
+import { IEmprestimoResponse } from '../core/models/IEmprestimoResponse';
 
 @Component({
   selector: 'app-emprestimo',
@@ -11,7 +12,8 @@ import { log } from 'console';
 })
 export class EmprestimoComponent implements OnInit {
 
-  formGroup: FormGroup;
+  formGroup: FormGroup = {} as FormGroup;
+  emprestimoResponse: IEmprestimoResponse | null = null
 
   constructor(private formBuilder: FormBuilder,
               private emprestimoService: EmprestimoService) { }
@@ -33,7 +35,7 @@ export class EmprestimoComponent implements OnInit {
 
     const body: IEmprestimoRequest = Object.assign({} as IEmprestimoRequest, this.formGroup.value)
     this.emprestimoService.postForm(body).subscribe(data => {
-      console.log('data', data)
+      this.emprestimoResponse = data
     })
   }
 

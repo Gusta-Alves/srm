@@ -23,5 +23,7 @@
                 <button mat-raised-button type="submit" color="primary" class="c-form__button">Simular empréstimo</button>
           </div>
     </form>
+
+    <app-simulacao *ngIf="emprestimoResponse" [emprestimoResponse]="emprestimoResponse"></app-simulacao>
       
 </section>

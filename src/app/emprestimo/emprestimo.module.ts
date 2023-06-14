@@ -7,10 +7,11 @@ import { EmprestimoComponent } from './emprestimo.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 import { MatInputModule } from '@angular/material/input'; 
-import { MatButtonModule } from '@angular/material/button'; 
+import { MatButtonModule } from '@angular/material/button';
+import { SimulacaoComponent } from './components/simulacao/simulacao.component'; 
 
 @NgModule({
-  declarations: [EmprestimoComponent],
+  declarations: [EmprestimoComponent, SimulacaoComponent],
   imports: [
     CommonModule,
     EmprestimoRoutingModule,

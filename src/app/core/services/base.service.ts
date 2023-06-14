@@ -18,8 +18,9 @@ export abstract class BaseService {
   }
 
   private backendFunctions(body: IEmprestimoRequest): any {
+    const juros: string = (body.valor * 1.05).toFixed(2)
     const mockResponse: IEmprestimoResponse = {
-      valor: body.valor,
+      valor: Number(juros) / body.parcelas,
       parcelas: body.parcelas,
       total: (body.valor * 1.05).toFixed(2)
     }
